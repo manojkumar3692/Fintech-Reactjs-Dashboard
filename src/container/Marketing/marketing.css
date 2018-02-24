@@ -1,0 +1,38 @@
+.marketing__firstsection {
+  height: 100vh;
+  background-image: url("../../assets/images/bg4.jpg");
+  background-size: cover; }
+  .marketing__firstsection--overlay {
+    opacity: 0.5;
+    background: black;
+    height: 100%; }
+  .marketing__firstsection--fullHeight {
+    height: 100%; }
+.marketing__search {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px; }
+  .marketing__search--heading {
+    text-align: center; }
+    .marketing__search--heading h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 25px 0; }
+    .marketing__search--heading p {
+      font-size: 18px;
+      width: 70%;
+      margin: 0 auto;
+      font-weight: 300;
+      color: #ffffff;
+      text-align: center; }
+  .marketing__search--each label {
+    color: #fff;
+    font-size: 14px; }
+.marketing__filter {
+  height: 150px;
+  margin-top: 15px; }
+  .marketing__filter .row {
+    height: 100%; }
+
+/*# sourceMappingURL=marketing.css.map */
