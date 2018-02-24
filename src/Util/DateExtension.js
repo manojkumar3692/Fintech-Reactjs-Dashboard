@@ -1,6 +1,9 @@
 import moment from 'moment';
 
 export const DateFormat = {
+
+	time:"h:mm",
+
 	day: "d",
 	weekday: "EEEE",
 

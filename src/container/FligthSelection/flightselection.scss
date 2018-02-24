@@ -1,0 +1,84 @@
+.flightselection {
+  padding: 15px;
+  //border: 1px solid #999;
+  &__container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 1px 1px 1px 1px #f7f7f7;
+    margin-bottom: 20px;
+  }
+  &__departure {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 15px 0;
+
+    &:last-child {
+      border: none;
+    }
+    &--logo {
+      img {
+        width: 60px;
+        margin-top: 10px;
+      }
+      h1 {
+        font-size:12px;
+        font-weight: 300;
+      }
+    }
+    &--details {
+      h1 {
+        font-size:14px;
+      }
+      h2 {
+        font-style: italic;
+        font-weight: 300;
+      }
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          margin: 0 20px;
+          vertical-align: middle;
+        }
+      }
+
+    }
+    &--timeInfo {
+      h1 {
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: 400;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+    &--separator {
+      border: 2px solid #c9c9c9;
+      width: 100px;
+    }
+  }
+  &__actionContainer {
+    border-left: 1px solid #f1f1f1;
+  }
+  &__action {
+    text-align: center;
+    h1 {
+      margin: 10px 0;
+      font-size:18px;
+      font-weight: 400  ;
+    }
+  }
+  &__confirmContainer {
+    padding: 15px;
+    h3 {
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+      position: relative;
+      top: -15px;
+    }
+  }
+
+}

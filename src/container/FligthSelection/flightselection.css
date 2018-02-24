@@ -1,0 +1,58 @@
+.flightselection {
+  padding: 15px; }
+  .flightselection__container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 1px 1px 1px 1px #f7f7f7;
+    margin-bottom: 20px; }
+  .flightselection__departure {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 15px 0; }
+    .flightselection__departure:last-child {
+      border: none; }
+    .flightselection__departure--logo img {
+      width: 60px;
+      margin-top: 10px; }
+    .flightselection__departure--logo h1 {
+      font-size: 12px;
+      font-weight: 300; }
+    .flightselection__departure--details h1 {
+      font-size: 14px; }
+    .flightselection__departure--details h2 {
+      font-style: italic;
+      font-weight: 300; }
+    .flightselection__departure--details ul {
+      list-style: none; }
+      .flightselection__departure--details ul li {
+        display: inline-block;
+        margin: 0 20px;
+        vertical-align: middle; }
+    .flightselection__departure--timeInfo h1 {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: 400; }
+    .flightselection__departure--timeInfo span {
+      font-weight: 700; }
+    .flightselection__departure--separator {
+      border: 2px solid #c9c9c9;
+      width: 100px; }
+  .flightselection__actionContainer {
+    border-left: 1px solid #f1f1f1; }
+  .flightselection__action {
+    text-align: center; }
+    .flightselection__action h1 {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: 400; }
+  .flightselection__confirmContainer {
+    padding: 15px; }
+    .flightselection__confirmContainer h3 {
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+      position: relative;
+      top: -15px; }
+
+/*# sourceMappingURL=flightselection.css.map */
