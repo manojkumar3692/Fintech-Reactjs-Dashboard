@@ -130,7 +130,7 @@ export class FlightSelection extends MarketingPage {
 											<Row>
 												<Col xs={3} className="flightselection__departure--logo">
 													<h1>Singapore Airline</h1>
-													<img src={require('../../assets/images/Singapore_Airlines.svg')}/>
+													<img src={require('../../assets/images/Malaysian Airline.png')}/>
 												</Col>
 												<Col xs={9} className="flightselection__departure--details">
 													<Row middle="xs" center="xs" style={{height:'100%'}}>
