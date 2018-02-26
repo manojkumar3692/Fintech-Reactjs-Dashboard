@@ -9,17 +9,13 @@ import MarketingPage from "./container/Marketing/Marketing";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import BookingDetails from "./container/BookingDetails/BookingDetails";
 import Dashboard from "./container/Dashboard/Dashboard";
+import App from "./container/App/App";
+
 ReactDOM.render(
 	<section className="parentContainer">
 		<MuiThemeProvider>
 	<BrowserRouter >
-		<Switch>
-			<Route exact path='/' render={props => <MarketingPage {...props}/>}     />
-			<Route path='/flightSelection' component={FlightSelection}/>
-			<Route path='/booking-details' component={BookingDetails}/>
-			<Route path='/dashboard' component={Dashboard}/>
-
-		</Switch>
+		<App/>
 	</BrowserRouter>
 		</MuiThemeProvider>
 	</section>
