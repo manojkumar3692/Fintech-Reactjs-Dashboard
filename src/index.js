@@ -18,11 +18,10 @@ import store, { history } from '../src/store-index';
 ReactDOM.render(
 	<section className="parentContainer">
 		<MuiThemeProvider>
-			<Provider store={store}>
-	<ConnectedRouter history={history}>
+
+	<BrowserRouter>
 		<App/>
-	</ConnectedRouter>
-			</Provider>
+	</BrowserRouter>
 		</MuiThemeProvider>
 	</section>
 	, document.getElementById('root'));

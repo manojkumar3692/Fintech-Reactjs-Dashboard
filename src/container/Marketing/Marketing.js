@@ -9,10 +9,6 @@ import {airportList} from "../../AirportDetails/AirportList";
 import {DateFormat} from "../../Util/DateExtension";
 import MarketingService from "./MarketingService";
 
-import { push } from 'react-router-redux'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import {increment} from '../../modules/module-counter';
 
 
 class MarketingPage extends PureComponent  {
@@ -169,9 +165,4 @@ class MarketingPage extends PureComponent  {
 	}
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-	increment,
-	changePage: () => push('/dashboard')
-}, dispatch)
-
-export default connect(null,mapDispatchToProps)(MarketingPage);
+export default MarketingPage

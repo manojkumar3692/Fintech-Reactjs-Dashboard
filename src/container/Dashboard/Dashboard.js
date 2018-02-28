@@ -6,7 +6,6 @@ import "./Dashboard.scss"
 class Dashboard extends PureComponent {
 	constructor(props) {
 		super(props)
-		this.check = this.check.bind(this);
 	}
 
 
