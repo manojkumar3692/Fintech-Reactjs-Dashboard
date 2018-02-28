@@ -1,0 +1,38 @@
+.dashboard {
+  width:1024px;
+  margin: 0 auto;
+  h1 {
+    font-size: 24px;
+  }
+  &__board {
+    widht:80%;
+    border: 1px solid #f7f7f7;
+    box-shadow: 1px 1px 1px 1px #f7f7f7;
+    padding: 15px;
+    &--outline {
+      
+    }
+    &--image {
+      height: 200px;
+      background-image: url("../../assets/images/sin.jpg");
+      background-size: cover;
+      background-position: -10px;
+    }
+    &--details {
+      border-left: 1px solid #f1f1f1;
+      border-right: 1px solid #f1f1f1;
+      height: 50px;
+      text-align: center;
+      padding-top: 10px;
+      h1 {
+        font-size: 14px;
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
+
+}

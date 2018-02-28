@@ -10,13 +10,19 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import BookingDetails from "./container/BookingDetails/BookingDetails";
 import Dashboard from "./container/Dashboard/Dashboard";
 import App from "./container/App/App";
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'react-router-redux'
+import store, { history } from '../src/store-index';
 
 ReactDOM.render(
 	<section className="parentContainer">
 		<MuiThemeProvider>
-	<BrowserRouter >
+			<Provider store={store}>
+	<ConnectedRouter history={history}>
 		<App/>
-	</BrowserRouter>
+	</ConnectedRouter>
+			</Provider>
 		</MuiThemeProvider>
 	</section>
 	, document.getElementById('root'));

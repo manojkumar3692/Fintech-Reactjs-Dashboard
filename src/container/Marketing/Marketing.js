@@ -9,6 +9,11 @@ import {airportList} from "../../AirportDetails/AirportList";
 import {DateFormat} from "../../Util/DateExtension";
 import MarketingService from "./MarketingService";
 
+import { push } from 'react-router-redux'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import {increment} from '../../modules/module-counter';
+
 
 class MarketingPage extends PureComponent  {
 	constructor(props) {
@@ -91,6 +96,7 @@ class MarketingPage extends PureComponent  {
 	render() {
 		return (
 			<section className="marketing">
+				<h1>{this.props.component}</h1>
 				<div className="marketing__firstsection">
 					<div className="marketing__firstsection--overlay">
 					<Row middle="xs" className="marketing__firstsection--fullHeight">
@@ -148,6 +154,8 @@ class MarketingPage extends PureComponent  {
 									</Col>
 									<Col xs className='marketing__search--action'>
 										<RaisedButton onClick={this._searchBooking.bind(this)} fullWidth={true} primary={true} label="Search"/>
+										<RaisedButton onClick={this.props.changePage} fullWidth={true} primary={true} label="Search"/>
+
 									</Col>
 								</Row>
 							</div>
@@ -161,4 +169,9 @@ class MarketingPage extends PureComponent  {
 	}
 }
 
-export default MarketingPage;
+const mapDispatchToProps = dispatch => bindActionCreators({
+	increment,
+	changePage: () => push('/dashboard')
+}, dispatch)
+
+export default connect(null,mapDispatchToProps)(MarketingPage);
