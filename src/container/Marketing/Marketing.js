@@ -112,7 +112,6 @@ class MarketingPage extends PureComponent  {
 												hintText="Type anything"
 												dataSource={this.newDataSource}
 												filter={AutoComplete.caseInsensitiveFilter}
-
 												hintText="Enter departure airport"
 												hintStyle={{color:"#d3d3d3"}}
 												inputStyle={{color:"#fff"}}
@@ -150,7 +149,6 @@ class MarketingPage extends PureComponent  {
 									</Col>
 									<Col xs className='marketing__search--action'>
 										<RaisedButton onClick={this._searchBooking.bind(this)} fullWidth={true} primary={true} label="Search"/>
-										<RaisedButton onClick={this.props.changePage} fullWidth={true} primary={true} label="Search"/>
 
 									</Col>
 								</Row>
