@@ -1,0 +1,70 @@
+.appDashboard {
+  position: relative;
+}
+
+.appDashboardLeft {
+  position: absolute;
+  left: 0;
+  width:200px;
+  background-color: #fff;
+  height: 100%;
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
+}
+
+.appDashboardRight {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding-left: 200px;
+  position: absolute;
+  left: 0;
+}
+
+.profileDashboard {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f7f7f7;
+  img {
+    font-size: 24px;
+    padding-top: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  h1 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #54667a;
+    margin-top: 5px;
+  }
+}
+
+.appMenu {
+  background-color: #fff;
+  ul {
+    li {
+      width: 100%;
+      padding: 1rem 0rem;
+      position: relative;
+      text-align: left;
+      padding-left: 20px;
+      border-bottom: 1px solid #f7f7f7;
+      cursor: pointer;
+      outline: none;
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      i {
+        margin-right: 10px;
+      }
+    }
+    li:hover {
+
+        background-color: #F7F7F7;
+        transition: all .4s;
+
+    }
+  }
+}

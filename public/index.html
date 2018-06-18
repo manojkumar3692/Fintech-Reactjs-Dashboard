@@ -10,7 +10,9 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,5 +39,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+	    // Initialize Firebase
+	    var config = {
+		    apiKey: "AIzaSyC2xpzYp4fwVamsBMTmGCtE6oaHrPGh0SM",
+		    authDomain: "travel-now-8ff39.firebaseapp.com",
+		    databaseURL: "https://travel-now-8ff39.firebaseio.com",
+		    projectId: "travel-now-8ff39",
+		    storageBucket: "travel-now-8ff39.appspot.com",
+		    messagingSenderId: "224001610404"
+	    };
+	    firebase.initializeApp(config);
+    </script>
   </body>
 </html>

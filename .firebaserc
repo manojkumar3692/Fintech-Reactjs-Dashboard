@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "finapp-765f0",
+    "default": "travel-now-8ff39"
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import MarketingPage from "../Marketing/Marketing";
-import "./flightselection.scss";
+import "./flightselection.css";
 import {airfareList} from "../../Util/FlightSearchDetails";
 import {DateFormat} from "../../Util/DateExtension";
 import Dialog from 'material-ui/Dialog';
@@ -26,7 +26,8 @@ export class FlightSelection extends MarketingPage {
 	};
 
 	onConfirm = () => {
-		this.props.history.push('/booking-details')
+		localStorage.setItem('type','wallet');
+		this.props.history.push('/appDashboard/confirm')
 	};
 
 

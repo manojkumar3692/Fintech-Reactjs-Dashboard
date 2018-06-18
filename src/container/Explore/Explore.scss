@@ -1,0 +1,97 @@
+.marketing {
+
+  &__firstsection {
+    height: 100vh;
+    background-image: url("../../assets/images/bg4.jpg");
+    background-size: cover;
+    &--overlay {
+      opacity: 0.75;
+      background: #333131;
+      height: 100%;
+    }
+    &--fullHeight {
+      height: 100%;
+    }
+  }
+  &__search {
+    width:100%;
+    margin: 0 auto;
+    padding: 0 8rem;
+
+    &--heading {
+      text-align:center;
+      h1 {
+        font-size:42px;
+        font-weight:700;
+        color: #ffffff;
+        margin: 25px 0;
+      }
+      p {
+        font-size:18px;
+        width:70%;
+        margin: 0 auto;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+    &--each {
+
+      label {
+        color:#fff;
+        font-size: 14px;
+      }
+    }
+    &--action {
+
+    }
+  }
+  &__filter {
+    height: 150px;
+    margin-top: 15px;
+    .row {
+      height: 100%;
+    }
+  }
+}
+
+.exploreAction {
+  width:300px;
+  background: #eb7475 !important;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  h1 {
+    text-align: center;
+   line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+  background-color: #eb7475 !important
+}
+
+.rangeslider-horizontal {
+  color: #ccc;
+}
+
+select {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.rangeslider {
+  background-color: #fff !important;
+}
+
+.exploreForm {
+  h1 {
+    font-size:14px;
+    font-weight: 400;
+  }
+}

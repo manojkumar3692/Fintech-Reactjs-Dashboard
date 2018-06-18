@@ -5,15 +5,15 @@ import {Switch, Route} from 'react-router-dom'
 import MarketingPage from "../Marketing/Marketing";
 import BookingDetails from "../BookingDetails/BookingDetails";
 import Dashboard from "../Dashboard/Dashboard";
+import Login from "../Login/Login";
+import AppDashboard from "../AppDashboard/AppDashboard";
 
 class App extends Component {
 	render() {
 		return (
 			<Switch>
-				<Route exact path='/' render={props => <MarketingPage {...props}/>}/>
-				<Route path='/flightSelection' component={FlightSelection}/>
-				<Route path='/booking-details' component={BookingDetails}/>
-				<Route path='/dashboard' component={Dashboard}/>
+				<Route exact path='/' render={props => <Login {...props}/>}/>
+				<Route path='/appDashboard' component={AppDashboard}/>
 			</Switch>
 		)
 	}

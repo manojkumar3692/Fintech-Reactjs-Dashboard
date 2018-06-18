@@ -1,6 +1,6 @@
 import React,{PureComponent} from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import "./bookingDetails.scss";
+import "./bookingDetails.css";
 import "../FligthSelection/flightselection.scss";
 import Paper from 'material-ui/Paper';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
@@ -22,7 +22,8 @@ class BookingDetails extends PureComponent {
 	confirmItenary() {
 		this.setState({snackBar:true});
 		setTimeout(() => {
-			this.props.history.push('/dashboard')
+			localStorage.setItem('type','payment');
+			this.props.history.push('/appDashboard/confirmation')
 		},5000)
 	}
 
@@ -143,56 +144,56 @@ class BookingDetails extends PureComponent {
 
 				</div>
 
-				<div className="bookingDetails__emi">
+				{/*<div className="bookingDetails__emi">*/}
 
-					<h1>Select you standard emi options from travelNow</h1>
-					<ul>
-						<li>
-							<RadioButtonGroup name="shipSpeed" defaultSelected="not_light">
-								<RadioButton
-									value="PREMIUM"
-									label="Premium"
-									style={styles.radioButton}
-								/>
-							</RadioButtonGroup>
-							<h1>TRAVELNOW PREMIUM EMI PLANS : 3 EMIs @ 5% pa</h1>
-							<div className="bookingDetails__emi--amount">
-								₹5,124/month
-							</div>
-						</li>
-						<li>
-							<RadioButtonGroup name="shipSpeed" defaultSelected="not_light">
-								<RadioButton
-									value="STANDARD"
-									label="Standard"
-									style={styles.radioButton}
-								/>
-							</RadioButtonGroup>
-							<h1>TRAVELNOW STANDARD EMI PLANS : 5 EMIs @ 9% pa</h1>
-							<div className="bookingDetails__emi--amount">
-								₹3,456/month
-							</div>
-						</li>
-						<li>
-							<RadioButtonGroup name="shipSpeed" defaultSelected="not_light">
-								<RadioButton
-									value="LOW"
-									label="low"
-									style={styles.radioButton}
-								/>
-							</RadioButtonGroup>
-							<h1>TRAVELNOW LOW EMI PLANS : 9 EMIs @ 12% pa</h1>
-							<div className="bookingDetails__emi--amount">
-								₹1,576/month
-							</div>
-						</li>
+					{/*<h1>Select you standard emi options from travelNow</h1>*/}
+					{/*<ul>*/}
+						{/*<li>*/}
+							{/*<RadioButtonGroup name="shipSpeed" defaultSelected="not_light">*/}
+								{/*<RadioButton*/}
+									{/*value="PREMIUM"*/}
+									{/*label="Premium"*/}
+									{/*style={styles.radioButton}*/}
+								{/*/>*/}
+							{/*</RadioButtonGroup>*/}
+							{/*<h1>TRAVELNOW PREMIUM EMI PLANS : 3 EMIs @ 5% pa</h1>*/}
+							{/*<div className="bookingDetails__emi--amount">*/}
+								{/*₹5,124/month*/}
+							{/*</div>*/}
+						{/*</li>*/}
+						{/*<li>*/}
+							{/*<RadioButtonGroup name="shipSpeed" defaultSelected="not_light">*/}
+								{/*<RadioButton*/}
+									{/*value="STANDARD"*/}
+									{/*label="Standard"*/}
+									{/*style={styles.radioButton}*/}
+								{/*/>*/}
+							{/*</RadioButtonGroup>*/}
+							{/*<h1>TRAVELNOW STANDARD EMI PLANS : 5 EMIs @ 9% pa</h1>*/}
+							{/*<div className="bookingDetails__emi--amount">*/}
+								{/*₹3,456/month*/}
+							{/*</div>*/}
+						{/*</li>*/}
+						{/*<li>*/}
+							{/*<RadioButtonGroup name="shipSpeed" defaultSelected="not_light">*/}
+								{/*<RadioButton*/}
+									{/*value="LOW"*/}
+									{/*label="low"*/}
+									{/*style={styles.radioButton}*/}
+								{/*/>*/}
+							{/*</RadioButtonGroup>*/}
+							{/*<h1>TRAVELNOW LOW EMI PLANS : 9 EMIs @ 12% pa</h1>*/}
+							{/*<div className="bookingDetails__emi--amount">*/}
+								{/*₹1,576/month*/}
+							{/*</div>*/}
+						{/*</li>*/}
 
-					</ul>
-				</div>
+					{/*</ul>*/}
+				{/*</div>*/}
 
 				<div className="bookingDetails__action">
 
-					<RaisedButton label="Confirm Booking" primary={true} onClick={this.confirmItenary.bind(this)} />
+					<RaisedButton label="Make Payment" primary={true} onClick={this.confirmItenary.bind(this)} />
 					<h1>*EMI starts from the 5th of your travel date</h1>
 				</div>
 

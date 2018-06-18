@@ -1,0 +1,24 @@
+.confirmation {
+  padding: 1rem; }
+
+.confirmationImage {
+  width: 100%;
+  text-align: center; }
+  .confirmationImage img {
+    width: 500px;
+    margin: 0 auto;
+    height: 300px; }
+
+.details {
+  padding: 1rem 0rem;
+  text-align: center; }
+  .details h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 1rem; }
+  .details h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1rem; }
+
+/*# sourceMappingURL=Confirmation.css.map */

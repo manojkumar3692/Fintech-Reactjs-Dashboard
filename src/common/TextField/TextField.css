@@ -1,0 +1,9 @@
+.textField {
+  padding-top: 15px; }
+  .textField input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px; }
+  .textField label {
+    font-size: 15px;
+    font-weight: 400; }

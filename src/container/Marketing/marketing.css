@@ -3,15 +3,15 @@
   background-image: url("../../assets/images/bg4.jpg");
   background-size: cover; }
   .marketing__firstsection--overlay {
-    opacity: 0.5;
-    background: black;
+    opacity: 0.75;
+    background: #333131;
     height: 100%; }
   .marketing__firstsection--fullHeight {
     height: 100%; }
 .marketing__search {
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 20px; }
+  padding: 0 8rem; }
   .marketing__search--heading {
     text-align: center; }
     .marketing__search--heading h1 {

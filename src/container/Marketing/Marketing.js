@@ -1,9 +1,9 @@
 import React,{PureComponent} from "react";
 
-import './marketing.scss';
+import './marketing.css';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import AutoComplete from 'material-ui/AutoComplete';
+import  AutoComplete  from 'material-ui/AutoComplete';
 import DatePicker from 'material-ui/DatePicker';
 import {airportList} from "../../AirportDetails/AirportList";
 import {DateFormat} from "../../Util/DateExtension";
@@ -83,7 +83,7 @@ class MarketingPage extends PureComponent  {
 				this.setState({allFare:data})
 				console.log('Sucess',res);
 				console.log(this.props)
-				this.props.history.push('/flightSelection')
+				this.props.history.push('/appDashboard/selection')
 			})
 			.catch((err) => {
 				console.log('Fetching Err',err)

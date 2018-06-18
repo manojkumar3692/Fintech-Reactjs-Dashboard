@@ -2,7 +2,7 @@ import React,{PureComponent} from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
-import "./Dashboard.scss"
+import "./Dashboard.css"
 class Dashboard extends PureComponent {
 	constructor(props) {
 		super(props)

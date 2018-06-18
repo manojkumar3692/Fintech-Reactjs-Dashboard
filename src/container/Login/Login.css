@@ -1,0 +1,20 @@
+.login {
+  background-image: url("../../images/bg2.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh; }
+
+.loginOuter {
+  height: 100%; }
+
+.loginContainer {
+  padding: 1rem;
+  width: 375px;
+  margin: 0 auto; }
+  .loginContainer h1 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize; }
+
+/*# sourceMappingURL=Login.css.map */

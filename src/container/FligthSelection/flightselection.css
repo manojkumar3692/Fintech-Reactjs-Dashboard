@@ -1,7 +1,9 @@
 .flightselection {
-  padding: 15px; }
+  padding: 15px;
+  overflow: auto;
+  height: 100vh; }
   .flightselection__container {
-    width: 1024px;
+    width: 80%;
     margin: 0 auto;
     padding: 15px;
     border: 1px solid #f7f7f7;

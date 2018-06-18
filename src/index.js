@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
-import './index.scss';
+import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import FlightSelection from "./container/FligthSelection/FlightSelection";
 import { Switch, Route } from 'react-router-dom'
